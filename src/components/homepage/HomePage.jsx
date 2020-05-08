@@ -5,19 +5,22 @@ import History from './content/History';
 
 import GroupImage from '../../images/group.JPG';
 import nanchak from '../../images/nanchak.jpg';
+import ParallaxCarousal from './carousal/ParallaxCarousal';
 
 class HomePage extends Component {
     render() {
         return (
             <div>
+
                 <ParallaxContainer img={GroupImage} showInner={true} />
+                <ParallaxCarousal />
                 <div className="container">
-                    <div style={{margin:'20px'}}></div>
+                    <div style={{ margin: '20px' }}></div>
                     <Introduction />
-                    <History/>
+                    <History />
                 </div>
                 <ParallaxContainer img={nanchak} showInner={false} />
-        
+
             </div>
         );
     }
