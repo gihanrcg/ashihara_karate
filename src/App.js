@@ -8,6 +8,8 @@ import HomePage from './components/homepage/HomePage';
 
 import AOS from 'aos'
 import SocialMedia from './components/socialMedia/SocialMedia';
+import ImageGallery from './components/gallery/ImageGallery';
+import coaches from './components/FlipCard/Coaches';
 
 class App extends React.Component {
 
@@ -36,6 +38,9 @@ class App extends React.Component {
               <Switch>
                 <Route path={"/"} exact component={HomePage} />
                 <Route path={"/social"} exact component={SocialMedia} />
+                <Route path={"/gallery"} exact component={ImageGallery} />
+                <Route path={"/coaches"} exact component={coaches} />
+
                 {/* <Route path={'/'} exact component={HomePage} />
               <Route path={"/admin"} exact component={Admin} />
               <Route path={"/timeline"} exact component={TimeLine} />
