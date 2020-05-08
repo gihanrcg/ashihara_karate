@@ -42,7 +42,7 @@ class Header extends Component {
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="/fb">FaceBook</a>
-                                <a className="dropdown-item" href="/social/insta">Instagram</a>
+                                <a className="dropdown-item" href="https://www.instagram.com/ashihara.kaikan.sl/">Instagram</a>
                                 <a className="dropdown-item" href="/yt">YouTube</a>
                             </div>
                         </li>

@@ -7,7 +7,6 @@ import Header from './components/header/Header';
 import HomePage from './components/homepage/HomePage';
 
 import AOS from 'aos'
-import SocialMedia from './components/socialMedia/SocialMedia';
 import ImageGallery from './components/gallery/ImageGallery';
 import coaches from './components/FlipCard/Coaches';
 import FaceBook from './components/socialMedia/FaceBook';
@@ -41,6 +40,8 @@ class App extends React.Component {
                 <Route path={"/"} exact component={HomePage} />
                 <Route path={"/fb"} exact component={FaceBook} />
                 <Route path={"/yt"} exact component={YouTube} />
+                
+
                 
                 <Route path={"/gallery"} exact component={ImageGallery} />
                 <Route path={"/coaches"} exact component={coaches} />
