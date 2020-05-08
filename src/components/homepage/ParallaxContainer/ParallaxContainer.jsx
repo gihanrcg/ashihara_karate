@@ -17,12 +17,12 @@ class ParallaxContainer extends Component {
                                         <tbody>
                                             <tr>
                                                 <td style={{ width: '30%' }} align="right">
-                                                    <img src={japaneses} style={{ width: '90%' }} />
+                                                    <img src={japaneses} style={{ width: '90%' }} alt="inner"/>
                                                 </td>
                                                 <td style={{ width: '70%' }} align="left">
                                                     <div className="parallax-container-inner" align="center" >
 
-                                                        <img src={logo} style={{ width: '50%' }} className="logo" />
+                                                        <img src={logo} style={{ width: '50%' }} className="logo" alt="inner"/>
                                                         <h2 style={{ color: 'white' }}>SRI LANKA KARATE</h2>
                                                         <h2 style={{ color: 'white' }}>KAI KAN ASHIHARA KARATE</h2>
                                                         <button className="button button2" onClick={() => {

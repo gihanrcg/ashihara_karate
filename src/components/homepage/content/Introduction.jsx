@@ -26,7 +26,7 @@ class Introduction extends Component {
 
                     <div data-aos="fade-up" className="card shadow p-3 mb-5 rounded bg-base" >
                         <h3 className="card-header text-center text-white">Introduction</h3>
-                        <img className="card-img-top" src={img} alt="Card image cap" />
+                        <img className="card-img-top" src={img} alt="card" />
                     </div>
 
                     <div data-aos="fade-up" className="card shadow p-3 mb-5 bg-white rounded">

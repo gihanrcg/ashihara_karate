@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 
 import SiteLoading from './components/siteloading/SiteLoading';
@@ -10,6 +10,8 @@ import AOS from 'aos'
 import SocialMedia from './components/socialMedia/SocialMedia';
 import ImageGallery from './components/gallery/ImageGallery';
 import coaches from './components/FlipCard/Coaches';
+import FaceBook from './components/socialMedia/FaceBook';
+import YouTube from './components/socialMedia/YouTube';
 
 class App extends React.Component {
 
@@ -37,7 +39,9 @@ class App extends React.Component {
             <BrowserRouter>
               <Switch>
                 <Route path={"/"} exact component={HomePage} />
-                <Route path={"/social"} exact component={SocialMedia} />
+                <Route path={"/fb"} exact component={FaceBook} />
+                <Route path={"/yt"} exact component={YouTube} />
+                
                 <Route path={"/gallery"} exact component={ImageGallery} />
                 <Route path={"/coaches"} exact component={coaches} />
 

@@ -12,9 +12,7 @@ class coaches extends Component {
 
     render() {
 
-        const cardStyles = {
-            padding: '1px'
-        }
+
         const images = this.importAll(require.context('../../../images/coaches', false, /\.(png|jpe?g|svg)$/));
 
         return (
@@ -32,7 +30,7 @@ class coaches extends Component {
                                 return (
 
 
-                                    <div style={{marginTop:'10px'}} key={key} className="col-md-4 col-sm-6 col-xs-12">
+                                    <div style={{ marginTop: '10px' }} key={key} className="col-md-4 col-sm-6 col-xs-12">
                                         <div className="content ">
                                             <FlipCardComp
                                                 image={ob}

@@ -36,7 +36,7 @@ class FlipCardComp extends Component {
                         </FlippingCardBack>
                         <FlippingCardFront>
                             <div className="img-wrap">
-                                <img src={this.props.image} style={{ width: '100%' }} />
+                                <img src={this.props.image} style={{ width: '100%' }} alt="flip img"/>
 
                             </div>
 

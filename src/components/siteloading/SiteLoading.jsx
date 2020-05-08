@@ -7,7 +7,7 @@ class SiteLoading extends Component {
     render() {
         return (
             <div className="overlay" align="center"> 
-                <img className="logo" id="loading" src={Logo}/>
+                <img className="logo" id="loading" src={Logo} alt="inner"/>
             </div>
         );
     }
