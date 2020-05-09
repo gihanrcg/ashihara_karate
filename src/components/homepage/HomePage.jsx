@@ -6,6 +6,7 @@ import History from './content/History';
 import GroupImage from '../../images/group.JPG';
 import nanchak from '../../images/nanchak.jpg';
 import ParallaxCarousal from './carousal/ParallaxCarousal';
+import ContactUs from '../contactUs/ContactUs';
 
 class HomePage extends Component {
     render() {
@@ -20,6 +21,8 @@ class HomePage extends Component {
                     <History />
                 </div>
                 <ParallaxContainer img={nanchak} showInner={false} />
+                <br/><br/>
+                <ContactUs />
 
             </div>
         );
