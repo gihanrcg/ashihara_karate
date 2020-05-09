@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img from '../../../images/group.JPG'
+import img from '../../../images/Ashihara_kaikan_logo.jpg'
 
 class History extends Component {
 
@@ -24,7 +24,7 @@ class History extends Component {
                 <div className="card-group">
 
                     <div data-aos="fade-up" className="card shadow p-3 mb-5 rounded bg-base" >
-                        <h3 className="card-header text-center text-white">History</h3>
+                        <h3 className="card-header text-center text-white">History of International KAI KAN ASHIHARA KARATE.</h3>
                         <img className="card-img-top" src={img} alt="Card  cap" />
                     </div>
 

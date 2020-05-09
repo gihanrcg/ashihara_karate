@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img from '../../../images/group.JPG'
+import img from '../../../images/maxresdefault.jpg'
 import sabaki from './images/sabaki.gif'
 import sabak2 from './images/sabaki2.gif'
 

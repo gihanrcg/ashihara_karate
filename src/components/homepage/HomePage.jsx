@@ -8,6 +8,7 @@ import nanchak from '../../images/nanchak.jpg';
 import ParallaxCarousal from './carousal/ParallaxCarousal';
 import ContactUs from '../contactUs/ContactUs';
 import Footer from '../footer/Footer';
+import SriLankanHistory from './content/SriLankanHistory';
 
 class HomePage extends Component {
     render() {
@@ -20,12 +21,13 @@ class HomePage extends Component {
                     <div style={{ margin: '20px' }}></div>
                     <Introduction />
                     <History />
+                    <SriLankanHistory />
                 </div>
                 <ParallaxContainer img={nanchak} showInner={false} />
-                <br/><br/>
+                <br /><br />
                 <ContactUs />
 
-                <Footer/>
+                <Footer />
 
             </div>
         );

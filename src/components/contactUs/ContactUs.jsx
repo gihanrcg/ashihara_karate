@@ -79,7 +79,7 @@ class ContactUs extends Component {
                                                     <input
                                                         value={this.state.name}
                                                         onChange={this.onChangeHandler}
-                                                        type="text" className="form-control" id="name" placeholder="Enter Name" name="name" />
+                                                        type="text" className="form-control" id="name" placeholder="Enter your name" name="name" />
                                                 </div>
                                             </div>
                                             <div className="form-group">
@@ -88,7 +88,7 @@ class ContactUs extends Component {
                                                     <input
                                                         value={this.state.email}
                                                         onChange={this.onChangeHandler}
-                                                        type="text" className="form-control" id="email" placeholder="Enter email" name="email" />
+                                                        type="text" className="form-control" id="email" placeholder="Enter your email" name="email" />
                                                 </div>
                                             </div>
                                             <div className="form-group">
@@ -97,7 +97,7 @@ class ContactUs extends Component {
                                                     <input
                                                         value={this.state.subject}
                                                         onChange={this.onChangeHandler}
-                                                        type="text" className="form-control" id="subject" placeholder="Enter Subject" name="subject" />
+                                                        type="text" className="form-control" id="subject" placeholder="Enter the subject" name="subject" />
                                                 </div>
                                             </div>
                                             <div className="form-group">
@@ -106,7 +106,7 @@ class ContactUs extends Component {
                                                     <textarea
                                                         value={this.state.message}
                                                         onChange={this.onChangeHandler}
-                                                        className=" form-control form-control-area" rows={5} name="message" id="comment" placeholder="Enter Message" />
+                                                        className=" form-control form-control-area" rows={5} name="message" id="comment" placeholder="Enter your message" />
                                                 </div>
                                             </div>
                                             <div className="form-group">
