@@ -14,7 +14,7 @@ import YouTube from './components/socialMedia/YouTube';
 
 class App extends React.Component {
 
-  componentDidMount() { 
+  componentDidMount() {
     AOS.init();
   }
 
@@ -38,11 +38,9 @@ class App extends React.Component {
             <BrowserRouter>
               <Switch>
                 <Route path={"/"} exact component={HomePage} />
-                <Route path={"/fb"} exact component={FaceBook} />
-                <Route path={"/yt"} exact component={YouTube} />
-                
 
-                
+
+
                 <Route path={"/gallery"} exact component={ImageGallery} />
                 <Route path={"/coaches"} exact component={coaches} />
 

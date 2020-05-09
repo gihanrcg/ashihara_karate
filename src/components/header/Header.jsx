@@ -35,15 +35,15 @@ class Header extends Component {
                         <li className="nav-item">
                             <a className="nav-link1" href="/gallery">Gallery</a>
                         </li>
-                      
+
                         <li className="nav-item dropdown">
                             <a className="nav-link1 dropdown-toggle" href="_blank" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Social Media
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="/fb">FaceBook</a>
-                                <a className="dropdown-item" href="https://www.instagram.com/ashihara.kaikan.sl/">Instagram</a>
-                                <a className="dropdown-item" href="/yt">YouTube</a>
+                                <a className="dropdown-item" target="_blank" href="https://www.facebook.com/Ashihara-Kai-Kan-Karate-Sri-Lanka-100900071622483/">FaceBook</a>
+                                <a className="dropdown-item" target="_blank" href="https://www.instagram.com/ashihara.kaikan.sl/">Instagram</a>
+                                <a className="dropdown-item" target="_blank" href="https://www.youtube.com/channel/UCYvWFgmbROhfiE4eOhxX-4A">YouTube</a>
                             </div>
                         </li>
 
