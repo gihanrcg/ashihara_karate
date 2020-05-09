@@ -7,6 +7,7 @@ import GroupImage from '../../images/group.JPG';
 import nanchak from '../../images/nanchak.jpg';
 import ParallaxCarousal from './carousal/ParallaxCarousal';
 import ContactUs from '../contactUs/ContactUs';
+import Footer from '../footer/Footer';
 
 class HomePage extends Component {
     render() {
@@ -23,6 +24,8 @@ class HomePage extends Component {
                 <ParallaxContainer img={nanchak} showInner={false} />
                 <br/><br/>
                 <ContactUs />
+
+                <Footer/>
 
             </div>
         );

@@ -63,54 +63,56 @@ class ContactUs extends Component {
             )
         } else {
             return (
-                <div className="container">
-                    <div data-aos="fade-up" className="card shadow p-3 mb-5 rounded ">
-                        <br /><br />
-                        <h3 className="text-center txt-base">Contact US</h3>
+                <section id="contact">
+                    <div className="container">
+                        <div data-aos="fade-up" className="card shadow p-3 mb-5 rounded ">
+                            <br /><br />
+                            <h3 className="text-center txt-base">Contact US</h3>
 
-                        <div className="contact">
-                            <div className="row">
-                                <div className="col-md-12 ">
-                                    <div className="small-box contact-form">
-                                        <div className="form-group">
-                                            <label className="control-label col-sm-4" htmlFor="name">Name:</label>
-                                            <div className="col-sm-10">
-                                                <input
-                                                    value={this.state.name}
-                                                    onChange={this.onChangeHandler}
-                                                    type="text" className="form-control" id="name" placeholder="Enter Name" name="name" />
+                            <div className="contact">
+                                <div className="row">
+                                    <div className="col-md-12 ">
+                                        <div className="small-box contact-form">
+                                            <div className="form-group">
+                                                <label className="control-label col-sm-4" htmlFor="name">Name:</label>
+                                                <div className="col-sm-10">
+                                                    <input
+                                                        value={this.state.name}
+                                                        onChange={this.onChangeHandler}
+                                                        type="text" className="form-control" id="name" placeholder="Enter Name" name="name" />
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="form-group">
-                                            <label className="control-label col-sm-4" htmlFor="email">Email:</label>
-                                            <div className="col-sm-10">
-                                                <input
-                                                    value={this.state.email}
-                                                    onChange={this.onChangeHandler}
-                                                    type="text" className="form-control" id="email" placeholder="Enter email" name="email" />
+                                            <div className="form-group">
+                                                <label className="control-label col-sm-4" htmlFor="email">Email:</label>
+                                                <div className="col-sm-10">
+                                                    <input
+                                                        value={this.state.email}
+                                                        onChange={this.onChangeHandler}
+                                                        type="text" className="form-control" id="email" placeholder="Enter email" name="email" />
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="form-group">
-                                            <label className="control-label col-sm-4" htmlFor="subject">Subject:</label>
-                                            <div className="col-sm-10">
-                                                <input
-                                                    value={this.state.subject}
-                                                    onChange={this.onChangeHandler}
-                                                    type="text" className="form-control" id="subject" placeholder="Enter Subject" name="subject" />
+                                            <div className="form-group">
+                                                <label className="control-label col-sm-4" htmlFor="subject">Subject:</label>
+                                                <div className="col-sm-10">
+                                                    <input
+                                                        value={this.state.subject}
+                                                        onChange={this.onChangeHandler}
+                                                        type="text" className="form-control" id="subject" placeholder="Enter Subject" name="subject" />
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="form-group">
-                                            <label className="control-label col-sm-4" htmlFor="comment">Comment:</label>
-                                            <div className="col-sm-10">
-                                                <textarea
-                                                    value={this.state.message}
-                                                    onChange={this.onChangeHandler}
-                                                    className=" form-control form-control-area" rows={5} name="message" id="comment" placeholder="Enter Message" />
+                                            <div className="form-group">
+                                                <label className="control-label col-sm-4" htmlFor="comment">Comment:</label>
+                                                <div className="col-sm-10">
+                                                    <textarea
+                                                        value={this.state.message}
+                                                        onChange={this.onChangeHandler}
+                                                        className=" form-control form-control-area" rows={5} name="message" id="comment" placeholder="Enter Message" />
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="form-group">
-                                            <div className="col-sm-offset-2 col-sm-10">
-                                                <button type="submit" className="btn btn-default submit-btn " onClick={this.onSubmitHandler}>Submit</button>
+                                            <div className="form-group">
+                                                <div className="col-sm-offset-2 col-sm-10">
+                                                    <button type="submit" className="btn btn-default submit-btn " onClick={this.onSubmitHandler}>Submit</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -118,7 +120,7 @@ class ContactUs extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             );
         }
 

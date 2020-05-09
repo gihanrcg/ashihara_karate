@@ -46,6 +46,9 @@ class Header extends Component {
                                 <a className="dropdown-item" target="_blank" href="https://www.youtube.com/channel/UCYvWFgmbROhfiE4eOhxX-4A">YouTube</a>
                             </div>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link1" href="/#contact">Contact Us</a>
+                        </li>
 
                     </ul>
 
