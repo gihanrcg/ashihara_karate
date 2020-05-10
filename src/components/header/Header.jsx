@@ -29,7 +29,7 @@ class Header extends Component {
                                 Members
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="/coaches">Coaches</a>
+                                <a className="dropdown-item" href="/coaches">Current Instructors</a>
                                 <a className="dropdown-item" href="/seniormembers">Senior Members</a>
                                 <a className="dropdown-item" href="/formerseniormembers">Former Senior Members</a>
                             </div>

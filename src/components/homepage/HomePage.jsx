@@ -14,10 +14,15 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-
                 <ParallaxContainer img={GroupImage} showInner={true} />
                 <ParallaxCarousal />
                 <div className="container">
+                    <div style={{ margin: '20px' }}></div>
+                    <div className="embed-responsive embed-responsive-16by9">
+                        <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/VDtQ2fPQ0rA"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                     <div style={{ margin: '20px' }}></div>
                     <Introduction />
                     <History />
@@ -27,7 +32,7 @@ class HomePage extends Component {
                 <br /><br />
                 <ContactUs />
 
-                <Footer />
+
 
             </div>
         );

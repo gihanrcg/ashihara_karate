@@ -25,6 +25,15 @@ class ModalBox extends Component {
                                                     <h6 className="card-subtitle mb-2 text-muted">{this.props.obj.time}</h6>
                                                 }
 
+                                                {
+                                                    this.props.obj.dojo && 
+                                                    <h6 className="card-subtitle mb-2 text-muted">{this.props.obj.dojo}</h6>
+                                                }
+                                                 {
+                                                    this.props.obj.tel && 
+                                                    <h6 className="card-subtitle mb-2 text-muted">{this.props.obj.tel}</h6>
+                                                }
+
                                                 <div className="card-text">
                                                     <ul>
                                                         {

@@ -11,6 +11,8 @@ import ImageGallery from './components/gallery/ImageGallery';
 import coaches from './components/FlipCard/Coaches';
 import SeniorMembers from './components/members/SeniorMembers';
 import FormerSeniorMembers from './components/members/FormarSeniorMembers';
+import CurrentInstructors from './components/members/CurrentInstructors';
+import Footer from './components/footer/Footer';
 
 class App extends React.Component {
 
@@ -37,12 +39,13 @@ class App extends React.Component {
           <div style={{ marginTop: '65px' }}>
             <BrowserRouter>
               <Switch>
+                
                 <Route path={"/"} exact component={HomePage} />
 
 
 
                 <Route path={"/gallery"} exact component={ImageGallery} />
-                <Route path={"/coaches"} exact component={coaches} />
+                <Route path={"/coaches"} exact component={CurrentInstructors} />
                 <Route path={"/seniormembers"} exact component={SeniorMembers} />
                 <Route path={"/formerseniormembers"} exact component={FormerSeniorMembers} />
 
@@ -58,6 +61,7 @@ class App extends React.Component {
 
               </Switch>
             </BrowserRouter>
+            <Footer />
           </div>
 
         </div>

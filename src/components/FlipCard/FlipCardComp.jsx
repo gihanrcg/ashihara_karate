@@ -8,7 +8,7 @@ class FlipCardComp extends Component {
 
     render() {
         return (
-            <div style={{
+            <div data-aos="fade-up" style={{
                 borderStyle: 'solid',
                 borderColor: 'red',
                 borderRadius: '10px',

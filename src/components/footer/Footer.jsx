@@ -4,7 +4,7 @@ import './FooterStyles.css'
 class Footer extends Component {
     render() {
         return (
-            <div>
+            <div data-aos="fade-up">
 
                 <footer className="site-footer">
                     <div className="container">
