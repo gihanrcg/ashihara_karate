@@ -8,8 +8,8 @@ class Header extends Component {
             <nav className="navbar navbar-dark fixed-top  navbar-expand-lg navbar-light bg-base text-white">
                 <a className="navbar-brand text-white" href="/">
                     <img src={logo} width="30" height="30" alt="brand" />
-                    &nbsp;
-                    <img src={require('../../images/lion.png')} width="30" height="30" alt="brand" />
+                   
+                   
                     <span className="navbar-brand mb-0 h1">&nbsp;&nbsp;ASHIHARA KAIKAN KARATE</span>
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
