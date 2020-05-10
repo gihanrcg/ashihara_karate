@@ -9,9 +9,8 @@ import HomePage from './components/homepage/HomePage';
 import AOS from 'aos'
 import ImageGallery from './components/gallery/ImageGallery';
 import coaches from './components/FlipCard/Coaches';
-import FaceBook from './components/socialMedia/FaceBook';
-import YouTube from './components/socialMedia/YouTube';
 import SeniorMembers from './components/members/SeniorMembers';
+import FormerSeniorMembers from './components/members/FormarSeniorMembers';
 
 class App extends React.Component {
 
@@ -45,6 +44,7 @@ class App extends React.Component {
                 <Route path={"/gallery"} exact component={ImageGallery} />
                 <Route path={"/coaches"} exact component={coaches} />
                 <Route path={"/seniormembers"} exact component={SeniorMembers} />
+                <Route path={"/formerseniormembers"} exact component={FormerSeniorMembers} />
 
                 {/* <Route path={'/'} exact component={HomePage} />
               <Route path={"/admin"} exact component={Admin} />

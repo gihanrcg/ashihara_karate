@@ -24,8 +24,8 @@ class History extends Component {
                 <div className="card-group">
 
                     <div data-aos="fade-up" className="card shadow p-3 mb-5 rounded bg-base" >
-                        <h3 className="card-header text-center text-white">History of International KAI KAN ASHIHARA KARATE.</h3>
-                        <img className="card-img-top" src={img} alt="Card  cap" />
+                        <h3 className="card-header text-center text-white">History of International ASHIHARA KAIKAN KARATE.</h3>
+                        <img className="card-img-top" src={require('../../../images/homepage/History of Ashihara Karate International.jpg')} alt="Card  cap" />
                     </div>
 
                     <div data-aos="fade-up" class="card shadow p-3 mb-5 bg-white rounded">

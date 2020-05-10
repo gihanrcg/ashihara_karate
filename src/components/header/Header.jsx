@@ -8,7 +8,9 @@ class Header extends Component {
             <nav className="navbar navbar-dark fixed-top  navbar-expand-lg navbar-light bg-base text-white">
                 <a className="navbar-brand text-white" href="/">
                     <img src={logo} width="30" height="30" alt="brand" />
-                    <span className="navbar-brand mb-0 h1">KAI KAN ASHIHARA KARATE</span>
+                    &nbsp;
+                    <img src={require('../../images/lion.png')} width="30" height="30" alt="brand" />
+                    <span className="navbar-brand mb-0 h1">&nbsp;&nbsp;ASHIHARA KAIKAN KARATE</span>
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
@@ -28,8 +30,8 @@ class Header extends Component {
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="/coaches">Coaches</a>
-                                <a className="dropdown-item" href="_blank">Active Members</a>
                                 <a className="dropdown-item" href="/seniormembers">Senior Members</a>
+                                <a className="dropdown-item" href="/formerseniormembers">Former Senior Members</a>
                             </div>
                         </li>
                         <li className="nav-item">

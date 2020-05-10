@@ -35,7 +35,9 @@ class SeniorMembers extends Component {
                 {
                     this.state.modalVisible && <ModalBox
                         closeModal={this.closeModal}
-                        obj={this.state.modalOb} />
+                        obj={this.state.modalOb}
+                        img={require(`../../images/members/Senior members/${this.state.modalOb.number}`)}
+                        />
                 }
 
                 <div className="container ">
@@ -55,8 +57,10 @@ class SeniorMembers extends Component {
                                             onClick={() => this.flipCardOnClick(ob)}>
 
                                             <FlipCardComp
-
-                                                details={ob} />
+                                                path="../../images/members/Senior members"
+                                                details={ob}
+                                                img={require(`../../images/members/Senior members/${ob.number}`)}
+                                                />
                                         </div>
                                     </div>
 
@@ -78,7 +82,7 @@ class SeniorMembers extends Component {
             //                     <div style={{ marginTop: '10px' }} key={key} className="xcol-md-4 col-sm-6 col-xs-12">
             //                         <div className="card">
             //                             <div className="img-wrap">
-            //                                 <img src={require(`../../images/members/Senior members/${data.number}`)} className="card-img-top" alt="..." />
+            //                                 <img src={require(`../../ images / members / Senior members / ${ data.number }`)} className="card-img-top" alt="..." />
             //                             </div>
 
             //                             <div className="card-body">

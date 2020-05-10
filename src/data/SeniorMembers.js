@@ -1,4 +1,4 @@
- const SeniorMemberData = [
+const SeniorMemberData = [
     {
         number: "1.jpg",
         name: "Late Shihan D.A. Welgama",
@@ -80,7 +80,10 @@
             "1st Dan Black belt Ashihara Kaikan Karate Sri Lanka ",
             "2nd place in D.A. Welgama Memorial Tournament 2002",
             "3rd place at Polonnaruwa & Ehaliyagoda All Island Tournaments.",
-            "Former Senior Instructor of Yatiyanthota & Dehiwala Y.M.C.A youth Dojos"
+            "Former Senior Instructor of Yatiyanthota & Dehiwala Y.M.C.A youth Dojos",
+            "2nd place in All Island Full Contact Karate tournament in 2017 (Black belt 70kg-75kg Category",
+            "Former Senior Instructor of Yatiyanthota & Dehiwala Y.M.C.A youth Dojos Ashihara Karate. ",
+            "Registered Instructor & Referee in Sri Lankan Karate Federation, Ministry of Sports Sri Lanka."
         ]
     },
     {
@@ -128,7 +131,28 @@
             "6th Kyu Light Green belt Ashihara Kaikan Karate Sri Lanka Joined in 2004-January at Royal ",
             "Captain of Ashihara Karate Royal College Colombo 07 (2008)"
         ]
+    },
+    {
+        number: "20.jpg",
+        name: "Miss. Krishanthi Barbara Dawson",
+        content: [
+            "Joined in 2004-January at Dehiwala YMCA (Coach Shihan D.C.M. Karunathilaka)",
+            "7th Kyu Dark Blue belt Ashihara Kaikan Karate Sri Lanka",
+            "Girls Captain of Dehiwala Y.M.C.A Ashihara Karate Dojo (2007-2011)"
+
+        ]
+    },
+    {
+        number: "19.jpg",
+        name: "Mr. Bathiya Ranasinghe",
+        content: [
+            "Joined in 2005-January at Royal College Colombo 07 Dojo (Coach Sensei Travice D Juriansz)",
+            "6th Kyu Light Yellow belt Ashihara Kaikan Karate Sri Lanka",
+            "Captain of Ashihara Karate Royal College Colombo 07 (2008)",
+            "B.Sc in Aeronautics and Astronautics Nanjing University of China "
+        ]
     }
+
 ]
 
 

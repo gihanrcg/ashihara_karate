@@ -19,9 +19,12 @@ class ModalBox extends Component {
                                         <div className="card">
 
                                             <div className="card-body text-center">
-                                                <img className="avatar rounded-circle" style={{ width: '200px', height: '200px' }} src={require(`../../../images/members/Senior members/${this.props.obj.number}`)} alt="Bologna" />
+                                                <img className="avatar rounded-circle" style={{ width: '200px', height: '200px' }} src={this.props.img} alt="Bologna" />
                                                 <h4 className="card-title">{this.props.obj.name}</h4>
-                                                {/* <h6 className="card-subtitle mb-2 text-muted">Famous Actor</h6> */}
+                                                {this.props.obj.time &&
+                                                    <h6 className="card-subtitle mb-2 text-muted">{this.props.obj.time}</h6>
+                                                }
+
                                                 <div className="card-text">
                                                     <ul>
                                                         {

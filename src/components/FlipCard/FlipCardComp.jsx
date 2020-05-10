@@ -27,7 +27,7 @@ class FlipCardComp extends Component {
                 <div align="center">
                     <div className="card md-8">
                         <img className="mem-image card-img-top "
-                            src={require(`../../images/members/Senior members/${this.props.details.number}`)}
+                            src={this.props.img}
                             alt="Card image cap" />
 
                     </div>
