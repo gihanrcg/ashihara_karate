@@ -20,7 +20,7 @@ class coaches extends Component {
             <div>
 
 
-                <div className="container">
+                <div className="container ">
 
                     <div className="row row-flex">
 
@@ -34,7 +34,7 @@ class coaches extends Component {
                                         <div className="content ">
                                             <FlipCardComp
                                                 image={ob}
-                                                details={ob.substring(ob.lastIndexOf("/") + 1, ob.lastIndexOf("."))} />
+                                                details="Et id labore labore voluptate adipisicing eu duis aliquip sint ex. Cupidatat dolore esse nostrud consequat culpa incididunt sit consequat exercitation ea. Amet incididunt anim eiusmod aliqua nisi tempor. Consectetur ut enim sint consequat esse eiusmod qui qui minim. Anim ut cillum officia ad ea enim consequat consequat officia ut duis eu ea." />
                                         </div>
                                     </div>
 
@@ -43,44 +43,8 @@ class coaches extends Component {
                                 )
                             })
                         }
-
-
-
-
-
-
-
                     </div>
                 </div>
-
-
-                {/* <div align="center">
-                    <h2 className="mb-5">Skills</h2>
-                    <div className="subheading mb-3" >Programming Languages and Frameworks</div>
-
-
-                    <div className="cards-skill">
-                        {
-                            images.map((ob, key) => {
-                                return (
-
-                                    <div key={key}
-                                        className="col"
-                                        style={cardStyles}
-                                    >
-                                        <FlipCardComp
-                                            image={ob}
-                                            details={ob.substring(ob.lastIndexOf("/") + 1, ob.lastIndexOf("."))} />
-                                    </div>
-
-
-                                )
-                            })
-                        }
-
-                    </div>
-
-                </div> */}
             </div>
         );
 

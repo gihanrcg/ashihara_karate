@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { FlippingCard, FlippingCardBack, FlippingCardFront } from 'react-ui-cards'
 import './FlipCardStyles.css';
 
+
 class FlipCardComp extends Component {
 
     render() {
@@ -13,37 +14,6 @@ class FlipCardComp extends Component {
                 borderRadius: '10px',
                 margin: '5%'
             }}>
-                <div align="center">
-                    <FlippingCard>
-                        <FlippingCardBack>
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '100%',
-                                    backgroundSize: 'contain',
-                                    backgroundPosition: 'center',
-                                    backgroundColor: 'black',
-                                    color: 'white'
-                                }}>
-                                <p style={{
-                                    width: '100%',
-                                    height: '100%',
-                                    verticalAlign: 'middle',
-                                    lineHeight: '35px'
-                                }}>{this.props.details}</p>
-                            </div>
-
-                        </FlippingCardBack>
-                        <FlippingCardFront>
-                            <div className="img-wrap">
-                                <img src={this.props.image} style={{ width: '100%' }} alt="flip img"/>
-
-                            </div>
-
-
-                        </FlippingCardFront>
-                    </FlippingCard>
-                </div>
 
                 <div style={{
                     width: '100%',
@@ -52,8 +22,18 @@ class FlipCardComp extends Component {
                     height: '40px',
                     lineHeight: '35px'
                 }}>
-                    <p align="center">Sensei {this.props.details}</p>
+                    <p align="center">{this.props.details.name}</p>
                 </div>
+                <div align="center">
+                    <div className="card md-8">
+                        <img className="mem-image card-img-top "
+                            src={require(`../../images/members/Senior members/${this.props.details.number}`)}
+                            alt="Card image cap" />
+
+                    </div>
+                </div>
+
+
             </div>
 
         );
