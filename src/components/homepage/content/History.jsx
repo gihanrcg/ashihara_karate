@@ -19,7 +19,7 @@ class History extends Component {
     render() {
         return (
             <section id="history">
-
+                <br /><br /><br /><br />
 
                 <div className="card-group">
 
@@ -28,11 +28,11 @@ class History extends Component {
                         <img className="card-img-top" src={require('../../../images/homepage/History of Ashihara Karate International.jpg')} alt="Card  cap" />
                     </div>
 
-                    <div data-aos="fade-up" class="card shadow p-3 mb-5 bg-white rounded">
+                    <div data-aos="fade-up" className="card shadow p-3 mb-5 bg-white rounded">
 
-                        <div class="card-body">
+                        <div className="card-body">
 
-                            <p class="card-text">
+                            <div className="card-text">
                                 <p style={{ marginRight: '0in', marginLeft: '0in', fontSize: '15px', fontFamily: '"Calibri",sans-serif', marginTop: '6.0pt', marginBottom: '6.0pt', lineHeight: '150%', textAlign: 'justify', background: 'white' }}><span style={{ color: 'black' }}>The first worldwide public display of Sabaki was in the documentary on the first Kyokushin World Open Tournament in 1975. Shihan Hideyuki Ashihara (senior instructor) displayed his Sabaki skills to defeat multiple attackers in a demonstration at the start of documentary. In 1980, Hideyuki Ashihara established his own style of karate forming the New International Karate Organisation (NIKO) - Ashihara Karate Kaikan and became the Kancho (Grandmaster) of NIKO. The Honbu (headquarters) of Ashihara is in Matsuyama City. Kancho Ashihara appointed senior student Joko Ninomiya and tournament champion, who was already based in the United States, as Shihan (senior instructor) for the United States.</span></p>
 
                                 {
@@ -52,7 +52,7 @@ class History extends Component {
                                     )
                                 }
                                 <button onClick={this.readMore} className="btn btn-primary">{this.state.readMore ? 'Read Less' : 'Read More'}</button>
-                            </p>
+                            </div>
                         </div>
 
                     </div>

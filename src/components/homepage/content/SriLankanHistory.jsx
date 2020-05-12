@@ -28,11 +28,11 @@ class SriLankanHistory extends Component {
                         <img className="card-img-top" src={require('../../../images/homepage/History of Ashihara Karate Sri Lanka.jpg')} alt="Card  cap" />
                     </div>
 
-                    <div data-aos="fade-up" class="card shadow p-3 mb-5 bg-white rounded">
+                    <div data-aos="fade-up" className="card shadow p-3 mb-5 bg-white rounded">
 
-                        <div class="card-body">
+                        <div className="card-body">
 
-                            <p class="card-text">
+                            <div className="card-text">
                                 <p dir="ltr" style={{ lineHeight: '1.3800000000000001', textAlign: 'justify', marginTop: '0pt', marginBottom: '10pt' }}><span style={{ fontSize: '12pt', fontFamily: '"Times New Roman"', color: '#000000', backgroundColor: 'transparent', fontWeight: 400, fontStyle: 'normal', fontVariant: 'normal', textDecoration: 'none', verticalAlign: 'baseline', whiteSpace: 'pre-wrap' }}>The history of our Karate Organization goes back to late 1950's. The founder of our association late Sensei D. A. Weilgama began training in Karate under three reputed foreign instructors namely Guilamo Olvera, Harry Shaeffer and Suzuki for over seven years. He was awarded the Sho Dan black belt grade and appointed as the Branch Chief for Karate in Ceylon in 1966 and was given permission to establish a branch of Japan Karate Do Kyokushin Kai Kan. By this time he was the only qualified Karate instructor in Sri Lanka appointed by any Japanese Karate Organization.</span></p>
 
                                 {
@@ -50,7 +50,7 @@ class SriLankanHistory extends Component {
                                     )
                                 }
                                 <button onClick={this.readMore} className="btn btn-primary">{this.state.readMore ? 'Read Less' : 'Read More'}</button>
-                            </p>
+                            </div>
                         </div>
 
                     </div>

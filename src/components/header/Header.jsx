@@ -8,8 +8,8 @@ class Header extends Component {
             <nav className="navbar navbar-dark fixed-top  navbar-expand-lg navbar-light bg-base text-white">
                 <a className="navbar-brand text-white" href="/">
                     <img src={logo} width="30" height="30" alt="brand" />
-                   
-                   
+
+
                     <span className="navbar-brand mb-0 h1">&nbsp;&nbsp;ASHIHARA KAIKAN KARATE</span>
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,6 +35,9 @@ class Header extends Component {
                             </div>
                         </li>
                         <li className="nav-item">
+                            <a className="nav-link1" href="/news">News</a>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link1" href="/gallery">Gallery</a>
                         </li>
 
@@ -43,9 +46,9 @@ class Header extends Component {
                                 Social Media
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" target="_blank" href="https://www.facebook.com/Ashihara-Kai-Kan-Karate-Sri-Lanka-100900071622483/">FaceBook</a>
-                                <a className="dropdown-item" target="_blank" href="https://www.instagram.com/ashihara.kaikan.sl/">Instagram</a>
-                                <a className="dropdown-item" target="_blank" href="https://www.youtube.com/channel/UCYvWFgmbROhfiE4eOhxX-4A">YouTube</a>
+                                <a className="dropdown-item" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/Ashihara-Kai-Kan-Karate-Sri-Lanka-100900071622483/">FaceBook</a>
+                                <a className="dropdown-item" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/ashihara.kaikan.sl/">Instagram</a>
+                                <a className="dropdown-item" rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCYvWFgmbROhfiE4eOhxX-4A">YouTube</a>
                             </div>
                         </li>
                         <li className="nav-item">

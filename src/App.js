@@ -8,11 +8,12 @@ import HomePage from './components/homepage/HomePage';
 
 import AOS from 'aos'
 import ImageGallery from './components/gallery/ImageGallery';
-import coaches from './components/FlipCard/Coaches';
 import SeniorMembers from './components/members/SeniorMembers';
 import FormerSeniorMembers from './components/members/FormarSeniorMembers';
 import CurrentInstructors from './components/members/CurrentInstructors';
 import Footer from './components/footer/Footer';
+import NewsFeed from './components/newsfeed/NewsFeed';
+import AdminPanel from './components/admin/AdminPanel';
 
 class App extends React.Component {
 
@@ -39,26 +40,14 @@ class App extends React.Component {
           <div style={{ marginTop: '65px' }}>
             <BrowserRouter>
               <Switch>
-                
                 <Route path={"/"} exact component={HomePage} />
-
-
-
                 <Route path={"/gallery"} exact component={ImageGallery} />
                 <Route path={"/coaches"} exact component={CurrentInstructors} />
                 <Route path={"/seniormembers"} exact component={SeniorMembers} />
                 <Route path={"/formerseniormembers"} exact component={FormerSeniorMembers} />
+                <Route path={"/news"} exact component={NewsFeed} />
 
-                {/* <Route path={'/'} exact component={HomePage} />
-              <Route path={"/admin"} exact component={Admin} />
-              <Route path={"/timeline"} exact component={TimeLine} />
-              <Route path={"/events"} exact component={EventPage} />
-              <Route path={"/instructors"} exact component={InstructorPage} />
-              <Route path={"/trainings"} exact component={TrainingPage} />
-              <Route path={"/profile"} exact component={SenseiProfile} />
-              <Route path={"/gallery"} exact component={GalleyPage} /> */}
-
-
+                <Route path={"/admin"} exact component={AdminPanel} />
               </Switch>
             </BrowserRouter>
             <Footer />

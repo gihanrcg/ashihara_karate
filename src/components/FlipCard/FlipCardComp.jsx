@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-import { FlippingCard, FlippingCardBack, FlippingCardFront } from 'react-ui-cards'
 import './FlipCardStyles.css';
 
 
@@ -28,7 +26,7 @@ class FlipCardComp extends Component {
                     <div className="card md-8">
                         <img className="mem-image card-img-top "
                             src={this.props.img}
-                            alt="Card image cap" />
+                            alt="Card cap" />
 
                     </div>
                 </div>

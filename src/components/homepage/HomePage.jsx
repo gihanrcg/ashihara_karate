@@ -7,7 +7,6 @@ import GroupImage from '../../images/group.JPG';
 import nanchak from '../../images/nanchak.jpg';
 import ParallaxCarousal from './carousal/ParallaxCarousal';
 import ContactUs from '../contactUs/ContactUs';
-import Footer from '../footer/Footer';
 import SriLankanHistory from './content/SriLankanHistory';
 
 class HomePage extends Component {
@@ -19,9 +18,9 @@ class HomePage extends Component {
                 <div className="container">
                     <div style={{ margin: '20px' }}></div>
                     <div className="embed-responsive embed-responsive-16by9">
-                        <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/VDtQ2fPQ0rA?autoplay=1"
+                        <iframe title="youtube intro" className="embed-responsive-item" src="https://www.youtube.com/embed/VDtQ2fPQ0rA?autoplay=1"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowFullScreen></iframe>
                     </div>
                     <div style={{ margin: '20px' }}></div>
                     <Introduction />
