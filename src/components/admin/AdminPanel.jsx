@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AddNews from './manage/addNews/AddNews';
+import ViewAllNews from './manage/viewAllNews/ViewAllNews';
 
 class AdminPanel extends Component {
 
@@ -16,16 +17,21 @@ class AdminPanel extends Component {
     componentDidMount() {
 
         let token = localStorage.getItem("karate-token");
-        this.state = {
+        this.setState({
             token: token
-        }
+        })
     }
 
     render() {
         if (localStorage.getItem('karate-token')) {
             return (
                 <div>
-                   <AddNews/>
+                    <AddNews />
+
+                    <div className="container">
+                        <ViewAllNews />
+                    </div>
+
                 </div>
             )
         } else {

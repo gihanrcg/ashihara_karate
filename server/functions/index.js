@@ -25,7 +25,7 @@ app.post('/login', loginUser);
 app.post('/signup', signUpUser);
 app.post('/user/image', auth, uploadProfilePhoto);
 
-app.get('/news', auth, getAllNews);
+app.get('/news', getAllNews);
 app.post('/news', auth, postOneNews);
 app.delete('/news/:newsId', auth, deleteNews);
 app.put('/news/:newsId', auth, editNews);

@@ -104,7 +104,9 @@ class AddNews extends Component {
                                 <input
                                     onChange={this.handleImageChange}
                                     name="imagesUpload"
-                                    type="file" multiple className="form-control" placeholder="Uplod images" required="required" />
+                                    type="file" 
+                                    accept="image/x-png,image/gif,image/jpeg"
+                                    multiple className="form-control" placeholder="Uplod images" required="required" />
                             </div>
                             {/* <div className="form-group small clearfix">
                             <label className="checkbox-inline"><input type="checkbox" /> Remember me</label>

@@ -63,7 +63,8 @@ class Login extends Component {
             <div>
                 <div className="login-form">
                     <form>
-                        <div className="avatar bg-base"><img style={{ width: '100%', height: '100%' }} src={require('../../../images/uclangrad2018.png')} /></div>
+                        <div className="avatar bg-base">
+                            <img alt="user" style={{ width: '100%', height: '100%' }} src={require('../../../images/uclangrad2018.png')} /></div>
                         <h4 className="modal-title">Login to Your Account</h4>
                         <div className="form-group">
                             <input

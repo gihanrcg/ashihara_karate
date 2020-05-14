@@ -54,9 +54,11 @@ class NewsFeed extends Component {
                 <br /><br />
 
                 {
-                    this.state.news.map(data => {
-                        console.log(data)
-                        return <News data={data} />
+                    this.state.news.map((data,key) => {                          
+                        
+                        let date = new Date(data.created).toDateString();
+                        
+                        return <News key={key} data={data} created={date}  />
                     })
                 }
 
