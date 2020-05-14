@@ -14,6 +14,7 @@ import CurrentInstructors from './components/members/CurrentInstructors';
 import Footer from './components/footer/Footer';
 import NewsFeed from './components/newsfeed/NewsFeed';
 import AdminPanel from './components/admin/AdminPanel';
+import Login from './components/admin/login/Login';
 
 class App extends React.Component {
 
@@ -48,6 +49,7 @@ class App extends React.Component {
                 <Route path={"/news"} exact component={NewsFeed} />
 
                 <Route path={"/admin"} exact component={AdminPanel} />
+                <Route path={"/admin-login"} exact component={Login} />
               </Switch>
             </BrowserRouter>
             <Footer />

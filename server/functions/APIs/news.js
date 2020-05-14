@@ -34,6 +34,7 @@ exports.postOneNews = (request, response) => {
         return response.status(400).json({ title: 'Must not be topic' });
     }
 
+    console.log(request.body)
     const newNewsItem = {
         topic: request.body.topic,
         body: request.body.body,

@@ -3,8 +3,9 @@
 const functions = require('firebase-functions');
 const app = require('express')();
 const auth = require('./util/auth');
+const cors = require('cors');
 
-
+app.use(cors({ origin: true }));
 
 const {
     getAllNews,
@@ -28,4 +29,7 @@ app.get('/news', auth, getAllNews);
 app.post('/news', auth, postOneNews);
 app.delete('/news/:newsId', auth, deleteNews);
 app.put('/news/:newsId', auth, editNews);
+
+
+
 exports.api = functions.https.onRequest(app);

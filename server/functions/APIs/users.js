@@ -9,11 +9,12 @@ const { validateLoginData, validateSignUpData } = require('../util/validators');
 
 // Login
 exports.loginUser = (request, response) => {
+    
     const user = {
         email: request.body.email,
         password: request.body.password
     }
-
+    console.log(user)
     const { valid, errors } = validateLoginData(user);
     if (!valid) return response.status(400).json(errors);
 
