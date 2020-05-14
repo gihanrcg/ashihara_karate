@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Proxy } from '../../../../data/ProxyData';
 import SiteLoading from '../../../siteloading/SiteLoading';
 import swal from 'sweetalert';
+import { storage } from '../../../../firebase/FirebaseInit'
 
 class ViewAllNews extends Component {
 
@@ -60,6 +61,13 @@ class ViewAllNews extends Component {
                     this.setState({
                         loading: true,
                     });
+
+
+                    news.images.map(url => {
+                        storage.refFromURL(url).delete();
+                    })
+
+
                     const authToken = localStorage.getItem('karate-token');
                     axios.defaults.headers.common = { Authorization: `${authToken}` };
                     axios

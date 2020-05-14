@@ -12,6 +12,7 @@ const {
     postOneNews,
     deleteNews,
     editNews,
+    getSingleNews
 } = require('./APIs/news')
 
 const {
@@ -29,6 +30,7 @@ app.get('/news', getAllNews);
 app.post('/news', auth, postOneNews);
 app.delete('/news/:newsId', auth, deleteNews);
 app.put('/news/:newsId', auth, editNews);
+app.get('/news/:newsId', getSingleNews);
 
 
 

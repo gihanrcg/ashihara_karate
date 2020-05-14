@@ -41,7 +41,7 @@ class Footer extends Component {
               </p>
                             </div>
                             <div className="col-md-8 col-sm-6 col-xs-12">
-                                <p className="copyright-text"><a href="/admin">Login as Admin </a>.
+                                <p className="copyright-text"><a href="/admin-login">Login as Admin </a>.
               </p>
                             </div>
                             <div className="col-md-4 col-sm-6 col-xs-12">

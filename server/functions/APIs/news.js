@@ -91,3 +91,39 @@ exports.editNews = (request, response) => {
             });
         });
 };
+
+exports.getSingleNews = (request, response) => {
+
+
+    let id = request.params.newsId;
+    db
+        .collection('news')
+        .orderBy('created', 'desc')
+        .get()
+        .then((data) => {
+            let news = [];
+            data.forEach((doc) => {
+
+                if (id === doc.id) {
+                    news.push({
+                        id: doc.id,
+                        topic: doc.data().topic,
+                        body: doc.data().body,
+                        created: doc.data().created,
+                        images: doc.data().images
+                    });
+                }
+
+            });
+            if(news.length === 1 ){
+                return response.json(news[0]);
+            }else{
+                return response.status(500).json({ error: 'Record not found' });
+            }
+            
+        })
+        .catch((err) => {
+            console.error(err);
+            return response.status(500).json({ error: err.code });
+        });
+};

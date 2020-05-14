@@ -15,6 +15,7 @@ import Footer from './components/footer/Footer';
 import NewsFeed from './components/newsfeed/NewsFeed';
 import AdminPanel from './components/admin/AdminPanel';
 import Login from './components/admin/login/Login';
+import CompleteNews from './components/newsfeed/CompleteNews';
 
 class App extends React.Component {
 
@@ -47,6 +48,7 @@ class App extends React.Component {
                 <Route path={"/seniormembers"} exact component={SeniorMembers} />
                 <Route path={"/formerseniormembers"} exact component={FormerSeniorMembers} />
                 <Route path={"/news"} exact component={NewsFeed} />
+                <Route path={"/n/:id"} component={CompleteNews} />
 
                 <Route path={"/admin"} exact component={AdminPanel} />
                 <Route path={"/admin-login"} exact component={Login} />
