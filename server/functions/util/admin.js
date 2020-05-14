@@ -14,5 +14,6 @@ admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: "https://website-63ee1.firebaseio.com"
 });
+
 const db = admin.firestore();
 module.exports = { admin, db };

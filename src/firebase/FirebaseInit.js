@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/storage'
+import 'firebase/analytics';
 
 var config = {
     apiKey: "AIzaSyApbF44wRf7ayXgeKHW5MZ_8w9LfGjJw2E",
@@ -13,6 +14,7 @@ var config = {
 }
 
 firebase.initializeApp(config);
+firebase.analytics();
 
 const storage = firebase.storage();
 
