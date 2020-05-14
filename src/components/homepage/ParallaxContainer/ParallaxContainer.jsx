@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import japaneses from '../../../images/Ashihara_Karate.png'
 import logo from '../../../images/uclangrad2018.png'
 import './ParalaxStyles.css'
+import TopNews from '../../topNews/TopNews';
 
 class ParallaxContainer extends Component {
     render() {
@@ -35,6 +36,11 @@ class ParallaxContainer extends Component {
                                     </table>
                                     <br /><br />
                                 </div>
+                            )
+                        }
+                        {
+                            this.props.news && (
+                                <TopNews/>
                             )
                         }
 

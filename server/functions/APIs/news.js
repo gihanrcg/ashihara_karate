@@ -115,12 +115,12 @@ exports.getSingleNews = (request, response) => {
                 }
 
             });
-            if(news.length === 1 ){
+            if (news.length === 1) {
                 return response.json(news[0]);
-            }else{
+            } else {
                 return response.status(500).json({ error: 'Record not found' });
             }
-            
+
         })
         .catch((err) => {
             console.error(err);

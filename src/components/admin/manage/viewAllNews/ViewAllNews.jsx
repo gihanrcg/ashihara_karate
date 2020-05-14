@@ -61,8 +61,6 @@ class ViewAllNews extends Component {
                     this.setState({
                         loading: true,
                     });
-
-
                     news.images.map(url => {
                         storage.refFromURL(url).delete();
                     })

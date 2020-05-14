@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AddNews from './manage/addNews/AddNews';
 import ViewAllNews from './manage/viewAllNews/ViewAllNews';
+import swal from 'sweetalert';
 
 class AdminPanel extends Component {
 

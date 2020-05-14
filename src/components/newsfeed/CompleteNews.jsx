@@ -24,6 +24,9 @@ class CompleteNews extends Component {
         axios
             .get(`${Proxy}/news/${this.props.match.params.id}`)
             .then((response) => {
+
+                response.data.created = new Date(response.data.created).toDateString();
+
                 this.setState({
                     loading: false,
                     news: response.data
@@ -61,7 +64,7 @@ class CompleteNews extends Component {
                         </div>
                         <br /><br />
                         <a href="/news"><button className="text-center btn bg-base text-white">Back to news</button></a>
-                  
+
                     </div>
                     <br /><br />
 

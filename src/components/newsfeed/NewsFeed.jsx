@@ -50,7 +50,7 @@ class NewsFeed extends Component {
             return <SiteLoading />
         }
         return (
-            <div>
+            <div className="container">
                 <br /><br />
 
                 {

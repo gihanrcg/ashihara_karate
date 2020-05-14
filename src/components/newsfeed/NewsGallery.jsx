@@ -48,6 +48,9 @@ class NewsGallery extends Component {
             <div className="container lbox">
                 <section>
 
+
+                    
+
                     <div className="cards-skill">
                         {
 

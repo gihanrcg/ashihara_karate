@@ -4,6 +4,7 @@ import imageUpload from './ImageUpload';
 import axios from 'axios'
 import { Proxy } from '../../../../data/ProxyData';
 import SiteLoading from '../../../siteloading/SiteLoading';
+import swal from 'sweetalert';
 
 class AddNews extends Component {
 
@@ -54,11 +55,18 @@ class AddNews extends Component {
             axios
                 .post(`${Proxy}/news`, obj)
                 .then((response) => {
-                 
+
                     this.setState({
                         loading: false,
                     });
-                    // window.location.href = "/admin"
+                    swal({
+                        title: "Done!",
+                        text: "News Added Successfully !",
+                        icon: "success",
+                        button: "OK",
+                    }).then(res => {
+                        window.location.href = "/admin"
+                    });
 
                 })
                 .catch((error) => {
@@ -104,7 +112,7 @@ class AddNews extends Component {
                                 <input
                                     onChange={this.handleImageChange}
                                     name="imagesUpload"
-                                    type="file" 
+                                    type="file"
                                     accept="image/x-png,image/gif,image/jpeg"
                                     multiple className="form-control" placeholder="Uplod images" required="required" />
                             </div>
