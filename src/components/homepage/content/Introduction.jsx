@@ -3,6 +3,7 @@ import img from '../../../images/maxresdefault.jpg'
 import sabaki from './images/sabaki.gif'
 import sabak2 from './images/sabaki2.gif'
 
+
 class Introduction extends Component {
 
     constructor(props) {
