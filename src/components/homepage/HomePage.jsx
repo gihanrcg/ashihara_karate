@@ -17,19 +17,20 @@ class HomePage extends Component {
                 <ParallaxContainer img={GroupImage} showInner={true} />
                 <ParallaxCarousal />
                 <div className="container">
-                    <div style={{ margin: '20px' }}></div>
-                    <div className="embed-responsive embed-responsive-16by9">
-                        <iframe title="youtube intro" className="embed-responsive-item" src="https://www.youtube.com/embed/VDtQ2fPQ0rA?autoplay=1"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen></iframe>
-                    </div>
-                    <div style={{ margin: '20px' }}></div>
+                    <TopNews />
                     <Introduction />
                     <History />
                     <SriLankanHistory />
-                    <TopNews />
+
                 </div>
                 <ParallaxContainer img={nanchak} showInner={false} />
+                <div style={{ margin: '20px' }}></div>
+                <div className="embed-responsive embed-responsive-16by9">
+                    <iframe title="youtube intro" className="embed-responsive-item" src="https://www.youtube.com/embed/KF9kvTfYmao"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen></iframe>
+                </div>
+                <div style={{ margin: '20px' }}></div>
                 <br /><br />
                 <ContactUs />
 

@@ -7,7 +7,7 @@ import Header from './components/header/Header';
 import HomePage from './components/homepage/HomePage';
 
 import AOS from 'aos'
-import ImageGallery from './components/gallery/ImageGallery';
+
 import SeniorMembers from './components/members/SeniorMembers';
 import FormerSeniorMembers from './components/members/FormarSeniorMembers';
 import CurrentInstructors from './components/members/CurrentInstructors';
@@ -16,6 +16,7 @@ import NewsFeed from './components/newsfeed/NewsFeed';
 import AdminPanel from './components/admin/AdminPanel';
 import Login from './components/admin/login/Login';
 import CompleteNews from './components/newsfeed/CompleteNews';
+import GalleryPage from './components/gallery/GalleryPage';
 
 class App extends React.Component {
 
@@ -43,7 +44,7 @@ class App extends React.Component {
             <BrowserRouter>
               <Switch>
                 <Route path={"/"} exact component={HomePage} />
-                <Route path={"/gallery"} exact component={ImageGallery} />
+                <Route path={"/gallery"} exact component={GalleryPage} />
                 <Route path={"/coaches"} exact component={CurrentInstructors} />
                 <Route path={"/seniormembers"} exact component={SeniorMembers} />
                 <Route path={"/formerseniormembers"} exact component={FormerSeniorMembers} />

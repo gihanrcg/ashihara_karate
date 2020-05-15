@@ -10,18 +10,20 @@ class ImageGallery extends Component {
         this.state = {
             photoIndex: 0,
             isOpen: false,
+            images: []
         };
     }
 
 
     componentDidMount() {
 
+        this.setState({
+            images: this.props.images
+        })
     }
 
 
-    importAll = (r) => {
-        return r.keys().map(r);
-    }
+
 
     imageClick = (key) => {
         this.setState({ isOpen: true, photoIndex: key })
@@ -29,17 +31,19 @@ class ImageGallery extends Component {
 
     render() {
 
-        const images = this.importAll(require.context('../../../images/gallery', false, /\.(png|jpe?g|svg)$/));
+
 
         // console.log(imageArr)
         return (
-            <div className="container lbox">
-                <section>
+            <div data-aos="fade-up" className="container lbox">
+                <h1 className="text-center">{this.props.topic}</h1>
+                <section id={this.props.topic}>
+
 
                     {
-                        images.map((ob, key) => {
+                        this.state.images.map((ob, key) => {
 
-                            
+
                             return (
                                 <img alt="ob" key={key} src={ob} onClick={() => {
                                     this.imageClick(key);
@@ -54,18 +58,18 @@ class ImageGallery extends Component {
                 {this.state.isOpen && (
                     <div style={{ zIndex: 1000 }}>
                         <Lightbox
-                            mainSrc={images[this.state.photoIndex]}
-                            nextSrc={images[(this.state.photoIndex + 1) % images.length]}
-                            prevSrc={images[(this.state.photoIndex + images.length - 1) % images.length]}
+                            mainSrc={this.state.images[this.state.photoIndex]}
+                            nextSrc={this.state.images[(this.state.photoIndex + 1) % this.state.images.length]}
+                            prevSrc={this.state.images[(this.state.photoIndex + this.state.images.length - 1) % this.state.images.length]}
                             onCloseRequest={() => this.setState({ isOpen: false })}
                             onMovePrevRequest={() =>
                                 this.setState({
-                                    photoIndex: (this.state.photoIndex + images.length - 1) % images.length,
+                                    photoIndex: (this.state.photoIndex + this.state.images.length - 1) % this.state.images.length,
                                 })
                             }
                             onMoveNextRequest={() =>
                                 this.setState({
-                                    photoIndex: (this.state.photoIndex + 1) % images.length,
+                                    photoIndex: (this.state.photoIndex + 1) % this.state.images.length,
                                 })
                             }
                         />

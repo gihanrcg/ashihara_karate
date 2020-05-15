@@ -29,7 +29,7 @@ class ParallaxContainer extends Component {
                                                       
                                                         <button className="button button2" onClick={() => {
                                                             window.location.replace('/#contact')
-                                                        }}>Join with US</button>
+                                                        }}>Join US</button>
                                                     </div>
                                                 </td>
                                             </tr>
