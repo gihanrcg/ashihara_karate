@@ -21,6 +21,8 @@ class Footer extends Component {
                                     <br />
                                     <li>LandLine +94 (0) 112727108</li>
                                     <br />
+                                    <li>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kashiharakaikansl@gmail.com</li>
+                                    <br />
                                     <li>Fax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +94 (0) 112765559</li>
                                     <br />
                                     <li>Address&nbsp;&nbsp;&nbsp;97/6, Galle Road, Dehiwala (Postal Coad: -10350), Sri Lanka.</li>

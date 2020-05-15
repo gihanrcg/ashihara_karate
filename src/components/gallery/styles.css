@@ -136,3 +136,12 @@
     right: 0;
   }
 }
+
+.pic-wrapper {
+  transition: all .1s ease-in-out;
+}
+
+.pic-wrapper:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}

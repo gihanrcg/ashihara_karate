@@ -45,7 +45,7 @@ class ImageGallery extends Component {
 
 
                             return (
-                                <img alt="ob" key={key} src={ob} onClick={() => {
+                                <img className="pic-wrapper" alt="ob" key={key} src={ob} onClick={() => {
                                     this.imageClick(key);
                                 }} />
                             )
@@ -75,7 +75,7 @@ class ImageGallery extends Component {
                         />
                     </div>
                 )}
-
+                <br /><br />
             </div>
         );
     }
