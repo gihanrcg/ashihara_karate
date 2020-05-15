@@ -34,7 +34,7 @@ class ParallaxCarousal extends Component {
 
 
         this.setState({
-            backgrounds: this.importAll(require.context('../../../../images/slideshow', false, /\.(png|jpe?g|svg)$/))
+            backgrounds: this.importAll(require.context('../../../images/slideshow', false, /\.(png|jpe?g|svg)$/))
         })
 
         setInterval(this.nextBackground, 3000);

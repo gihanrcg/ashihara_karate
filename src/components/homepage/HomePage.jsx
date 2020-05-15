@@ -4,7 +4,7 @@ import Introduction from './content/Introduction';
 import History from './content/History';
 
 import GroupImage from '../../images/group.JPG';
-import nanchak from '../../images/nanchak.jpg';
+import nanchak from '../../images/Other/abc.jpg';
 import ParallaxCarousal from './carousal/ParallaxCarousal';
 import ContactUs from '../contactUs/ContactUs';
 import SriLankanHistory from './content/SriLankanHistory';
@@ -25,11 +25,30 @@ class HomePage extends Component {
                 </div>
                 <ParallaxContainer img={nanchak} showInner={false} />
                 <div style={{ margin: '20px' }}></div>
-                <div className="embed-responsive embed-responsive-16by9">
-                    <iframe title="youtube intro" className="embed-responsive-item" src="https://www.youtube.com/embed/KF9kvTfYmao"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen></iframe>
+
+               
+
+                <div className="container">
+                    <div className="card-deck">
+                        <div className="card">
+                            <iframe height="250"
+                                src="https://www.youtube.com/embed/Zr0lx6YCVKw?controls=0">
+                            </iframe>
+                        </div>
+                        <div className="card">
+                            <iframe height="250"
+                                src="https://www.youtube.com/embed/KF9kvTfYmao?controls=0">
+                            </iframe>
+                        </div>
+                        <div className="card">
+                            <iframe height="250"
+                                src="https://www.youtube.com/embed/8MPWB3tHPEQ?controls=0">
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
+
+
                 <div style={{ margin: '20px' }}></div>
                 <br /><br />
                 <ContactUs />
