@@ -14,6 +14,9 @@ class SriLankanHistory extends Component {
         this.setState({
             readMore: !this.state.readMore
         })
+        if (this.state.readMore) {
+            window.location.href = "#history"
+        }
     }
 
     render() {

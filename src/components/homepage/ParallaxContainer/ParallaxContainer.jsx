@@ -22,7 +22,7 @@ class ParallaxContainer extends Component {
                                                 </td>
                                                 <td style={{ width: '70%' }} align="left">
                                                     <div className="parallax-container-inner" align="center" >
-                                                        <img src={require('../../../images/lion.png')} style={{ width: '50%' }} className="" alt="inner" />
+                                                        <img src={require('../../../images/newlogo.png')} style={{ width: '50%' }} className="" alt="inner" />
                                                         <img src={logo} style={{ width: '50%' }} className="logo" alt="inner" />
                                                         <h2 style={{ color: 'white' }}>ASHIHARA KAIKAN KARATE</h2>
                                                         <h2 style={{ color: 'white' }}>SRI LANKA</h2>
